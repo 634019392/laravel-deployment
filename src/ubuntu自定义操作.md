@@ -111,6 +111,7 @@ $ service ssh restart
 [安装多版本教程1?](https://www.cnblogs.com/wtgg/p/9767129.html)
 [安装多版本教程2?](https://www.jb51.net/article/145899.htm)   
 [安装多php版本出现的问题](https://segmentfault.com/a/1190000014160639)   
+[apt-get相关命令](https://www.cnblogs.com/downey-blog/p/10473893.html)
 ```bash
 $ vim /etc/nginx/sites-enabled/`需要修改项目的php版本`
 
