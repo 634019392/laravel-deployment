@@ -163,6 +163,6 @@ $ service php7.0-fpm restart
 ```
 ## 打包和解压缩命令
 ```bash
-$ tar zxvf FileName.tar.gz             # 解压
-$ tar zcvf FileName.tar.gz DirName       # 压缩
+$ tar zxvf FileName.tar.tgz                # 解压
+$ tar zcvf FileName.tar.tgz FileName       # 压缩
 ```
