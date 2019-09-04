@@ -161,7 +161,7 @@ $ apt-get install `复制上面需要的拓展,例如:php-rrd` `复制上面需�
 $ service nginx restart
 $ service php7.0-fpm restart
 ```
-## 查找php拓展和安装
+## 打包和解压缩命令
 ```bash
 $ tar zxvf FileName.tar.gz             # 解压
 $ tar zcvf FileName.tar.gz DirName       # 压缩
