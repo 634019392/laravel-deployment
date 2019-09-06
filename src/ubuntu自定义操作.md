@@ -166,3 +166,15 @@ $ service php7.0-fpm restart
 $ tar zxvf FileName.tar.tgz                # 解压
 $ tar zcvf FileName.tar.tgz FileName       # 压缩
 ```
+
+## ubuntu中安装vsftp
+```bash
+1、安装vsftpd
+==> sudo apt install vsftpd
+2、启动服务
+==> sudo systemctl start vsftpd
+==> sudo systemctl enable vsftpd
+3、激活
+==> /lib/systemd/systemd-sysv-install enable vsftp
+4、服务器添加21端口、查看防火墙是否开启、配置文件中打开listen=YES，关闭listen_ivp6=NO
+```
