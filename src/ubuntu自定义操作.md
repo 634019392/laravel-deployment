@@ -362,6 +362,9 @@ ssl_enable=NO
 
 # 6.6、添加vsftpd.user_list文件
 $ touch /etc/vsftpd.user_list
+uftp
+~
+~
 
 # 7、cmd中测试
 > ftp [服务器ip]
