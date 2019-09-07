@@ -171,8 +171,11 @@ $ tar zcvf FileName.tar.tgz FileName       # 压缩
 ```bash
 # 1、安装vsftpd
 $ sudo apt install vsftpd
-# 2、启动服务
-$ sudo service vsftpd start
+# 2、相关命令
+$ sudo service vsftpd start   #启动vsftpd
+$ sudo service vsftpd restart #重启
+$ sudo service vsftpd stop    #关闭
+$ sudo service vsftpd status  #查看状态
 $ sudo systemctl start vsftpd
 $ sudo systemctl enable vsftpd
 # 3、执行
