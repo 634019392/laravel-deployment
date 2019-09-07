@@ -373,4 +373,7 @@ C:\Users\LL>ftp 'ip地址'
 > ftp> get [文件名]
 # 上传文件
 > ftp> put [文件名]
+
+# 8、卸载vsftpd
+$ apt remove --purge vsftpd
 ```
