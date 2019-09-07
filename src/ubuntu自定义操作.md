@@ -175,17 +175,17 @@ $ tar zcvf FileName.tar.tgz FileName       # 压缩
 # 1、安装vsftpd
 $ sudo apt install vsftpd
 # 2、相关命令
-$ sudo service vsftpd start   #启动vsftpd
-$ sudo service vsftpd restart #重启
-$ sudo service vsftpd stop    #关闭
-$ sudo service vsftpd status  #查看状态
-$ sudo systemctl start vsftpd
-$ sudo systemctl enable vsftpd
+$ sudo service vsftpd start    #启动vsftpd
+$ sudo service vsftpd restart  #重启
+$ sudo service vsftpd stop     #关闭
+$ sudo service vsftpd status   #查看状态
+$ sudo systemctl start vsftpd  #可忽略
+$ sudo systemctl enable vsftpd #可忽略
 # 3、执行
-$ /lib/systemd/systemd-sysv-install enable vsftp
+$ /lib/systemd/systemd-sysv-install enable vsftp #可忽略
 # 4、服务器安全组添加21端口、查看防火墙是否开启、配置文件中打开listen=YES，关闭listen_ivp6=NO
-# 5、新建目录/home/ftp作为用户主目录
-$ sudo mkdir /home/ftp
+# 5、新建目录/home/uftp作为用户主目录
+$ sudo mkdir /home/uftp
 # 6.1、新建用户uftp，强定用户主目录和所用shell，并设置密码
 $ sudo useradd -d /home/uftp -s /bin/bash uftp
 $ sudo passwd uftp
