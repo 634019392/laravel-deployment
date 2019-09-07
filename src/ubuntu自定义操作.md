@@ -236,8 +236,11 @@ userlist_enable=YES
 userlist_deny=NO
 #
 # Default umask for local users is 077. You may wish to change this to 022,
+# 默认是077，公共权限不足可以使用022
+# umask = 022 时，新建的目录 权限是755，文件的权限是 644
+# umask = 077 时，新建的目录 权限是700，文件的权限时 600
 # if your users expect that (022 is used by most other ftpd's)
-#local_umask=022
+local_umask=022
 #
 # Uncomment this to allow the anonymous FTP user to upload files. This only
 # has an effect if the above global write enable is activated. Also, you will
