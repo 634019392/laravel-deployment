@@ -17,6 +17,7 @@ netstat -an | grep 3306   //查看所有3306端口使用情况。
 ```
 
 ## 查看和卸载软件
+[apt和apt-get的相关命令](https://blog.csdn.net/taotongning/article/details/82320472)
 ```bash
 # 查看
 $ dpkg -l|grep name
