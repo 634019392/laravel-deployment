@@ -382,4 +382,7 @@ C:\Users\LL>ftp 'ip地址'
 
 # 8、卸载vsftpd
 $ apt remove --purge vsftpd
+
+# 9、添加用户到vsftpd中
+$ vim /etc/vsftpd.user_list #中加入用户名，如果是root，还需要把/etc/vsftpduser中的root删除
 ```
