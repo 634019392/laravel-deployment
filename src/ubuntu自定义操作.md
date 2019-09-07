@@ -177,7 +177,7 @@ $ sudo systemctl start vsftpd
 $ sudo systemctl enable vsftpd
 # 3、执行
 $ /lib/systemd/systemd-sysv-install enable vsftp
-# 4、服务器添加21端口、查看防火墙是否开启、配置文件中打开listen=YES，关闭listen_ivp6=NO
+# 4、服务器安全组添加21端口、查看防火墙是否开启、配置文件中打开listen=YES，关闭listen_ivp6=NO
 # 5、新建目录/home/ftp作为用户主目录
 $ sudo mkdir /home/ftp
 # 6.1、新建用户uftp，强定用户主目录和所用shell，并设置密码
