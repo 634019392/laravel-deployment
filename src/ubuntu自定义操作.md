@@ -192,7 +192,7 @@ $ sudo passwd uftp
 # 6.2、将目录/home/ftp的所属者和所属组都改为uftp:
 $ sudo chown uftp(所属者):uftp(所属组) /home/uftp
 # 6.3、新建文件/etc/vsftpd.user_list，用于存放允许访问ftp的用户：
-$ sudoo vim /etc/vsftpd.user_list
+$ sudo vim /etc/vsftpd.user_list
 # 6.4、添加uftp，保存退出
 uftp
 ~
