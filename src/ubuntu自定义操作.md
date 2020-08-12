@@ -169,6 +169,13 @@ $ service php7.0-fpm restart
 $ tar zxvf FileName.tar.tgz                # 解压
 $ tar zcvf FileName.tar.tgz FileName       # 压缩
 ```
+## 打包和解压缩命令---zip
+```bash
+$ sudo apt-get install zip
+$ sudo apt-get install unzip
+$ unzip -d /var/www/newDirName FileName.zip # 解压指定目录
+$ zip -r FileName.zip fileName # 递归压缩
+```
 
 ## ubuntu中安装vsftp
 ```bash
