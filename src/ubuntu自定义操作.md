@@ -231,6 +231,11 @@ $ service ssh restart
 或者
 $ sudo /etc/init.d/ssh restart
 ```
+如果没有反应，有可能是ip白名单没有加上去
+**添加ip白名单**
+- 放在阿里云控制台头像上
+- 点击安全管控->白名单管理->IP白名单
+- 添加服务器，添加源IP:0.0.0.0
 可直接通过xshell登录root账号了
 
 ## 乌班图安装多版本php
