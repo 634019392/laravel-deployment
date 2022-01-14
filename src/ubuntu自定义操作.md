@@ -129,9 +129,9 @@ Include /etc/ssh/sshd_config.d/*.conf
 
 # Authentication:
 
-#LoginGraceTime 2m
+LoginGraceTime 2m
 #PermitRootLogin prohibit-password
-#StrictModes yes
+StrictModes yes
 #MaxAuthTries 6
 #MaxSessions 10
 
@@ -218,8 +218,6 @@ Subsystem	sftp	/usr/lib/openssh/sftp-server
 #	PermitTTY no
 #	ForceCommand cvs server
 
-
-
 UseDNS no
 AddressFamily inet
 SyslogFacility AUTHPRIV
@@ -227,22 +225,6 @@ PermitRootLogin yes
 PasswordAuthentication yes
 ```
 
-```bash
-···
-···
-···
-# Authentication:
-
-LoginGraceTime 2m
-#PermitRootLogin prohibit-password
-PermitRootLogin yes
-StrictModes yes
-#MaxAuthTries 6
-#MaxSessions 10
-···
-···
-···
-```
 保存退出vim，重启ssh
 ```bash
 $ service ssh restart
