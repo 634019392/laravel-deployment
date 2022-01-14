@@ -74,6 +74,14 @@ $ not connected>
 
 ## 允许root用户登录ssh
 新安装的Ubuntu 16.04系统中ssh是不允许root用户登录的   
+**安装ssh服务器**
+```
+sudo apt install openssh-server
+```
+**安装ssh客户端**
+```
+sudo apt install openssh-client
+```
 **重置管理员密码**
 ```bash
 $ sudo password root
@@ -107,6 +115,8 @@ StrictModes yes
 保存退出vim，重启ssh
 ```bash
 $ service ssh restart
+或者
+$ sudo /etc/init.d/ssh restart
 ```
 可直接通过xshell登录root账号了
 
